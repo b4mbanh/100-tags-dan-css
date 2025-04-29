@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman web minimalis dan interaktif">
+    <title>Web Keren Minimalis</title>
+    <link rel="stylesheet" href="styles.css">
+    <base href="/">
+    <style>body { margin: 0; }</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#media">Media</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="beranda">
+            <div class="heading">Selamat Datang di Web Keren Kami</div>
+            <p>Nikmati pengalaman minimalis dan interaktif.</p>
+            <canvas id="interactiveCanvas" width="400" height="200"></canvas>
+            <p>Klik pada canvas untuk menggambar lingkaran!</p>
+            <br>
+            <hr>
+            <p>Ini adalah teks <b>tebal</b>, <i>miring</i>, <strong>penting</strong>, dan <em>ditekankan</em>.</p>
+            <p>Teks yang <mark>disorot</mark>, <small>kecil</small>, <del>dihapus</del>, dan <ins>disisipkan</ins>.</p>
+            <p>Subscript: H<sub>2</sub>O, Superscript: E = mc<sup>2</sup>.</p>
+            <q>Kutipan pendek</q>
+            <cite>Referensi kutipan</cite>
+            <dfn>Definisi istilah</dfn>
+            <code>var x = 5;</code>
+            <samp>Output sampel</samp>
+            <kbd>Ctrl + C</kbd>
+            <var>Variabel</var>
+            <pre>Teks praformat</pre>
+            <bdo dir="rtl">Teks kanan ke kiri</bdo>
+            <!-- Tambahan baru -->
+            <h1>Judul Utama</h1>
+            <p>Selamat datang di situs kami yang baru dan lebih baik!</p>
+        </section>
+        <section id="tentang">
+            <div class="heading">Tentang Kami</div>
+            <p>Kami suka menciptakan pengalaman web yang sederhana namun kuat.</p>
+            <details>
+                <summary>Info Lebih Lanjut</summary>
+                <p>Tim kami berdedikasi pada inovasi dan desain yang berpusat pada pengguna.</p>
+            </details>
+            <blockquote>Kreativitas adalah kekuatan kami.</blockquote>
+            <abbr title="HyperText Markup Language">HTML</abbr>
+            <acronym title="Cascading Style Sheets">CSS</acronym>
+            <map name="imageMap">
+                <area shape="rect" coords="0,0,50,50" href="#" alt="Area 1">
+            </map>
+            <img src="gambar.jpg" usemap="#imageMap" alt="Gambar dengan Peta">
+        </section>
+        <section id="kontak">
+            <div class="heading">Hubungi Kami</div>
+            <form id="contactForm">
+                <fieldset>
+                    <legend>Informasi Kontak</legend>
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" required></textarea>
+                    <label for="pilihan">Pilihan:</label>
+                    <select id="pilihan" name="pilihan">
+                        <optgroup label="Opsi 1">
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                        </optgroup>
+                        <optgroup label="Opsi 2">
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </optgroup>
+                    </select>
+                    <input type="checkbox" id="setuju" name="setuju">
+                    <label for="setuju">Saya setuju</label>
+                    <button type="submit">Kirim</button>
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+            <datalist id="suggestions">
+                <option value="Saran 1">
+                <option value="Saran 2">
+            </datalist>
+            <input list="suggestions" placeholder="Ketik untuk saran">
+            <keygen name="security">
+            <output name="hasil">Hasil perhitungan</output>
+            <!-- Tambahan baru -->
+            <h2>Formulir Kontak</h2>
+            <p>Silakan isi formulir di bawah ini untuk menghubungi kami.</p>
+        </section>
+        <section id="data">
+            <div class="heading">Tabel Data</div>
+            <table>
+                <caption>Data Sampel</caption>
+                <colgroup>
+                    <col span="1" style="background-color: #f0f0f0;">
+                    <col span="1" style="background-color: #e0e0e0;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Nilai</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Item 2</td>
+                        <td>200</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>300</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <progress value="75" max="100"></progress>
+            <p>Progres: 75%</p>
+            <meter value="0.6" min="0" max="1">60%</meter>
+            <p>Nilai meter: 60%</p>
+            <ruby>漢<rt>Kan</rt>字<rt>ji</rt></ruby>
+            <rp>(</rp><rt>Kanji</rt><rp>)</rp>
+        </section>
+        <section id="media">
+            <div class="heading">Galeri Media</div>
+            <figure>
+                <img src="gambar.jpg" alt="Gambar Sampel">
+                <figcaption>Gambar Sampel</figcaption>
+            </figure>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                <track kind="subtitles" src="subtitles.vtt" srclang="id" label="Bahasa Indonesia">
+                Browser Anda tidak mendukung tag video.
+            </video>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+            <iframe src="https://www.example.com" title="Contoh"></iframe>
+            <object data="file.pdf" type="application/pdf" width="300" height="200"></object>
+            <embed src="flash.swf" type="application/x-shockwave-flash" width="300" height="200">
+            <noembed>Alternatif untuk embed</noembed>
+            <param name="autoplay" value="true">
+            <picture>
+                <source media="(min-width: 800px)" srcset="gambar-besar.jpg">
+                <img src="gambar-kecil.jpg" alt="Gambar Responsif">
+            </picture>
+            <wbr>Tempat untuk memecah kata panjang jika diperlukan.</wbr>
+            <!-- Tambahan baru -->
+            <h3>Media Terbaru</h3>
+            <p>Lihat koleksi media terbaru kami di sini.</p>
+        </section>
+        <aside>
+            <div class="heading">Bilah Samping</div>
+            <p>Informasi tambahan atau iklan bisa diletakkan di sini.</p>
+            <template id="template">
+                <p>Ini adalah konten template.</p>
+            </template>
+            <slot name="slot"></slot>
+            <shadow></shadow>
+        </aside>
+    </main>
+    <footer>
+        <p>© 2023 Web Keren Inc.</p>
+        <address>Kontak kami di <a href="mailto:info@example.com">info@example.com</a></address>
+        <time datetime="2023-10-25">25 Oktober 2023</time>
+    </footer>
+    <dialog id="modal">
+        <p>Ini adalah dialog modal.</p>
+        <button id="closeModal">Tutup</button>
+    </dialog>
+    <script src="script.js"></script>
+    <noscript>Browser Anda tidak mendukung JavaScript.</noscript>
+</body>
+</html>
